@@ -1,12 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-    <h1>Hello  world</h1>
-</body>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body class="wrapper">
+    <!-- Navbar 🚀 -->
+    <nav
+      class="contain h-[80px] box-border flex justify-between items-center text-[#000000]"
+    >
+      <div class="flex items-center gap-2">
+        <div>
+          <img src="./images/logo-1.png" class="w-[50px] h-[32px]" alt="" />
+        </div>
+        <div>
+          <h1 class="text-[25px] md:text-[34px] font-semibold">Furniro</h1>
+        </div>
+      </div>
+      <div>
+        <ul class="hidden lg:flex gap-16 items-center">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="lg:flex gap-6 items-center text-xl hidden">
+          <li>
+            <img
+              src="./icons/user-icon.png"
+              class="w-[22px] cursor-pointer"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="./icons/search-icon.png"
+              class="w-[22px] cursor-pointer"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="./icons/heart-icon.png"
+              class="w-[22px] cursor-pointer"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="./icons/cart-icon.png"
+              class="w-[22px] cursor-pointer"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="lg:hidden">
+        <img src="./icons/menu.svg" class="w-[32px] cursor-pointer" alt="" />
+      </div>
+    </nav>
+
+    <!-- hero Section 🚀 -->
+
+    <div
+      class="bg-[url(/background.png)] bg-cover md:bg-[length:100%_100%] bg-center bg-no-repeat w-full wrapper"
+    >
+      <div
+        class="w-full contain flex flex-col md:flex-row h-[500px] md:h-[600px] lg:h-[650px] xl:h-[750px] 2xl:h-[810px] items-center justify-center"
+      >
+        <div class="hidden lg:block lg:w-[50%]"></div>
+        <div class="w-full lg:w-[50%]">
+          <div
+            class="!w-full h-[350px] p-4 xl:h-[410px] xl:p-7 2xl:w-[650px] rounded-lg bg-[#fff3e3e3] md:bg-[#FFF3E3]"
+          >
+            <p class="text-[17px] text-black text-center md:text-left">
+              New Arrival
+            </p>
+            <h1 class="heading text-brown">Discover Our New Collection</h1>
+            <p class="text-[17px] mt-3 text-black text-center md:text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+            <button
+              class="bg-[#B88E2F] mt-7 xl:mt-10 mx-auto md:mx-0 font-medium w-[222px] h-[74px] text-white flex justify-center items-center"
+            >
+              BUY NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Range section 🚀 -->
+
+    <div class="contain mt-14">
+      <div>
+        <h1 class="font-bold text-center text-[32px] text-black">
+          Browse The Range
+        </h1>
+        <p class="text-[17px] mt-1 text-[#666666] text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 mt-[35px] md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10"
+      >
+        <div class="w-full">
+          <img src="/images/range-1.png" class="w-full h-[480px]" alt="" />
+          <div>
+            <h1 class="text-[20px] text-center text-black mt-3 font-semibold">
+              Dining
+            </h1>
+          </div>
+        </div>
+        <div class="w-full">
+          <img src="/images/range-2.png" class="w-full h-[480px]" alt="" />
+          <div>
+            <h1 class="text-[20px] text-center text-black mt-3 font-semibold">
+              Living
+            </h1>
+          </div>
+        </div>
+        <div class="w-full">
+          <img src="/images/range-3.png" class="w-full h-[480px]" alt="" />
+          <div>
+            <h1 class="text-[20px] text-center text-black mt-3 font-semibold">
+              Bedroom
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our products 🚀 -->
+    <div class="contain mt-14">
+      <h1 class="subHeading text-center">Our Products</h1>
+      <div
+        class="w-full grid grid-cols-1 mt-[32px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7"
+      >
+        <div class="h-[446px] w-full relative">
+          <div
+            class="absolute top-2 right-1 h-10 w-10 rounded-full bg-[#E97171] text-white text-sm flex justify-center items-center"
+          >
+            -31%
+          </div>
+          <div>
+            <img
+              src="./images/products-1.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Syltherine</h1>
+            <p class="text-[15px] text-[#898989] my-1">Stylish cafe chair</p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 2.500.000</h1>
+              </div>
+              <div>
+                <p class="text-[#B0B0B0] line-through">Rp 3.500.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[446px] w-full relative">
+          <!-- <div class="absolute top-2 right-1 h-10 w-10 rounded-full bg-[#E97171] text-white text-sm flex justify-center items-center">31%</div> -->
+          <div>
+            <img
+              src="./images/products-2.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Leviosa</h1>
+            <p class="text-[15px] text-[#898989] my-1">Stylish cafe chair</p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 2.500.000</h1>
+              </div>
+              <div>
+                <!-- <p class="text-[#B0B0B0] line-through">Rp 3.500.000</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[446px] w-full relative">
+          <div
+            class="absolute top-2 right-1 h-10 w-10 rounded-full bg-[#E97171] text-white text-sm flex justify-center items-center"
+          >
+            -50%
+          </div>
+          <div>
+            <img
+              src="./images/products-3.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Lolito</h1>
+            <p class="text-[15px] text-[#898989] my-1">Luxury big sofa</p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 7.000.000</h1>
+              </div>
+              <div>
+                <p class="text-[#B0B0B0] line-through">Rp 14.000.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[446px] w-full relative">
+          <div
+            class="absolute top-2 right-1 h-10 w-10 rounded-full bg-[#2EC1AC] text-white text-sm flex justify-center items-center"
+          >
+            New
+          </div>
+          <div>
+            <img
+              src="./images/products-4.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Respira</h1>
+            <p class="text-[15px] text-[#898989] my-1">
+              Outdoor bar table and stool
+            </p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 500.000</h1>
+              </div>
+              <div>
+                <!-- <p class="text-[#B0B0B0] line-through">Rp 3.500.000</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[446px] w-full relative">
+          <!-- <div
+            class="absolute top-2 right-1 h-9 w-9 rounded-full bg-[#E97171] text-white text-sm flex justify-center items-center"
+          >
+            31%
+          </div> -->
+          <div>
+            <img
+              src="./images/products-5.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Grifo</h1>
+            <p class="text-[15px] text-[#898989] my-1">Night lamp</p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 150.000</h1>
+              </div>
+              <div>
+                <!-- <p class="text-[#B0B0B0] line-through">Rp 3.500.000</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[446px] w-full relative">
+          <div
+            class="absolute top-2 right-1 h-9 w-9 rounded-full bg-[#2EC1AC] text-white text-sm flex justify-center items-center"
+          >
+            New
+          </div>
+          <div>
+            <img
+              src="./images/products-6.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Muggo</h1>
+            <p class="text-[15px] text-[#898989] my-1">Small mug</p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 150.000</h1>
+              </div>
+              <!-- <div>
+                <p class="text-[#B0B0B0] line-through">Rp 3.500.000</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="h-[446px] w-full relative">
+          <div
+            class="absolute top-2 right-1 h-9 w-9 rounded-full bg-[#E97171] text-white text-sm flex justify-center items-center"
+          >
+            -50%
+          </div>
+          <div>
+            <img
+              src="./images/products-7.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Pingky</h1>
+            <p class="text-[15px] text-[#898989] my-1">Cute bed set</p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 7.000.000</h1>
+              </div>
+              <div>
+                <p class="text-[#B0B0B0] line-through">Rp 14.000.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[446px] w-full relative">
+          <div
+            class="absolute top-2 right-1 h-9 w-9 rounded-full bg-[#2EC1AC] text-white text-sm flex justify-center items-center"
+          >
+            New
+          </div>
+          <div>
+            <img
+              src="./images/products-8.png"
+              class="w-full h-[301px]"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-[#F4F5F7] text-[#3A3A3A] p-[15px]">
+            <h1 class="text-[20px] font-semibold">Potty</h1>
+            <p class="text-[15px] text-[#898989] my-1">Minimalist flower pot</p>
+            <div class="flex gap-1 items-baseline">
+              <div>
+                <h1 class="text-[20px] font-semibold">Rp 500.000</h1>
+              </div>
+              <div>
+                <!-- <p class="text-[#B0B0B0] line-through">Rp 3.500.000</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="mx-auto text-brown border border-brown w-[245px] h-[48px] mt-4 flex justify-center items-center"
+      >
+        Show more
+      </button>
+    </div>
+
+    <!-- Our inspiration 🚀 -->
+
+    <div class="wrapper bg-[#FCF8F3] py-7 mt-14">
+      <div class="contain flex flex-col gap-8 md:flex-row">
+        <div
+          class="w-full md:w-[50%] flex justify-center items-center text-center md:text-left"
+        >
+          <div>
+            <h1 class="subHeading text-[#3A3A3A] leading-[50px]">
+              50+ Beautiful rooms inspiration
+            </h1>
+            <p class="text-[#616161] text-sm my-5">
+              Our designer already made a lot of beautiful prototipe of rooms
+              that inspire you
+            </p>
+            <button
+              class="bg-[#B88E2F] font-medium text-sm mx-auto lg:mx-0 w-[176px] h-[48px] text-white flex justify-center items-center"
+            >
+              Explore more
+            </button>
+          </div>
+        </div>
+        <div class="w-full md:w-[50%]">
+          <div class="flex flex-col w-full md:flex-row items-center gap-3">
+            <div>
+              <img src="./images/inspiration-1.png" class="w-full" alt="" />
+            </div>
+            <div>
+              <img src="./images/inispiration-2.png" class="w-full" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer 🚀 -->
+
+    <!-- <footer class="wrapper border-t mt-14 border-[#00000034] py-7">
+      <div class="contain grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <h1 class="text-[25px] md:text-[34px] font-semibold">Furniro.</h1>
+          <p class="text-[#9f9f9f] text-sm mt-[40px]">
+            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+          </p>
+        </div>
+        <div></div>
+      </div>
+    </footer> -->
+  </body>
 </html>

@@ -4,7 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-    font-family: 'Poppins', sans-serif;
+.wrapper {
+  @apply w-full flex justify-center items-center flex-col;
+}
+.contain{
+    @apply w-[98%] xl:w-[1440px]
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bgImg{
+  background-image: url("../images/background.png");
+}
+.heading{
+  @apply text-[40px] font-bold xl:text-[50px] leading-[50px] my-2 xl:my-6 text-center md:text-left
+}
+.subHeading{
+  @apply text-[35px] lg:text-[38px] font-bold text-black
 }
